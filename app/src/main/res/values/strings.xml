@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Employ Manager</string>
+    <string name="users_list">Here is a list of all registered users.</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

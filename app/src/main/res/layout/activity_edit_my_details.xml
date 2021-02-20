@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditMyDetails">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toTopOf="@+id/guideline19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        app:layout_constraintBottom_toTopOf="@+id/my_email"
+        app:layout_constraintStart_toStartOf="@+id/my_email"
+        app:layout_constraintTop_toBottomOf="@+id/my_name" />
+
+    <EditText
+        android:enabled="false"
+        style="@style/input_style"
+        android:id="@+id/my_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_style"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/my_password"
+        app:layout_constraintStart_toStartOf="@+id/my_password"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Password"
+        app:layout_constraintBottom_toTopOf="@+id/my_password"
+        app:layout_constraintStart_toStartOf="@+id/my_password"
+        app:layout_constraintTop_toBottomOf="@+id/my_email" />
+
+    <EditText
+        style="@style/input_style"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/textView14" 
+        android:id="@+id/my_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/confirm_my_password"
+        app:layout_constraintStart_toStartOf="@+id/confirm_my_password"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/my_name"
+        app:layout_constraintStart_toStartOf="@+id/my_name"
+        app:layout_constraintTop_toBottomOf="@+id/guideline19" />
+
+    <EditText
+        style="@style/input_style"
+        android:id="@+id/my_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/my_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/my_email"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@drawable/button_bg"
+        android:textAllCaps="false"
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_my_password" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm password"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_my_password"
+        app:layout_constraintStart_toStartOf="@+id/confirm_my_password"
+        app:layout_constraintTop_toBottomOf="@+id/my_password" />
+
+    <EditText
+        style="@style/input_style"
+        android:visibility="invisible"
+        android:id="@+id/confirm_my_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/update_btn"
+        app:layout_constraintEnd_toEndOf="@+id/update_btn"
+        app:layout_constraintStart_toStartOf="@+id/update_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/change_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="Change Password"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/confirm_my_password"
+        app:layout_constraintEnd_toEndOf="@+id/my_email"
+        app:layout_constraintStart_toStartOf="@+id/my_email"
+        app:layout_constraintTop_toBottomOf="@+id/my_email" />
+</androidx.constraintlayout.widget.ConstraintLayout>

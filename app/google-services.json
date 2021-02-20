@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "743503954513",
+    "firebase_url": "https://employees-manager-app-project-default-rtdb.firebaseio.com",
+    "project_id": "employees-manager-app-project",
+    "storage_bucket": "employees-manager-app-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743503954513:android:6578c9a5c484e7ff106e70",
+        "android_client_info": {
+          "package_name": "com.employmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743503954513-neiv9f1cdcmu8m01rpuu830nnacjv3jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2MWZcFrgiMwMDAygqKWwzlGUAj8bTQXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743503954513-neiv9f1cdcmu8m01rpuu830nnacjv3jd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

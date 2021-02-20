@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="signup_btn" type="id" />
+    <item name="signup_password" type="id" />
+    <item name="signup_lastname" type="id" />
+    <item name="signup_email" type="id" />
+    <item name="textView" type="id" />
+    <item name="signup_firstname" type="id" />
+</resources>
